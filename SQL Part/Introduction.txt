@@ -1,0 +1,39 @@
+zyyx原始表格有：
+rpt_forecast_stk 卖方预测数据表
+rpt_rating_adjust 报告评级调整表
+rpt_earnings_adjust 报告盈利预测调整表
+con_forecast_stk 个股一致预期数据表
+
+需要创建：
+trade_days
+pe_latest_report
+eps_latest_report
+dps_latest_report
+np_fy1
+np_fy2
+np_fy3
+
+分别运行：
+1：创建新表.sql
+创建下面要用到的各个表，以下每个表对应的创建代码块都在注释里面
+
+2：创建交易日索引.sql
+生成trade_days表中的数据
+
+3：刷新过去91天各机构最近一次预测pe.sql
+生成pe_latest_report表中的数据
+
+4：刷新过去91天各机构最近一次预测eps.sql
+生成eps_latest_report表中的数据
+
+5：刷新过去91天各机构最近一次预测dps.sql
+生成dps_latest_report表中的数据
+
+6：刷新过去91天各机构最近一次预测np_fy1.sql
+生成np_fy1表中的数据
+
+7：刷新过去91天各机构最近一次预测np_fy2.sql
+生成np_fy2表中的数据
+
+8：刷新过去91天各机构最近一次预测np_fy3.sql
+生成np_fy3表中的数据
