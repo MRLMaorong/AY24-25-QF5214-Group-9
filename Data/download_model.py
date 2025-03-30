@@ -2,7 +2,7 @@
 import gdown
 import os
 
-def download_model(file_id, output_path="factor_second.pkl"):
+def download_model(file_id, output_path="Data/factor_second.pkl"):
     url = f"https://drive.google.com/uc?id={file_id}"
 
     if os.path.exists(output_path):
